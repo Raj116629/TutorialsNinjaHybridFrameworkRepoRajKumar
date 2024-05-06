@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TutorialNinjaTestSuite</th></tr>
+<tr><td><a href="#t0">TutorialsNinja Test Cases</a></td><td class="num">7</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">57,059</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TutorialNinjaTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TutorialsNinja Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.tutorialsninja.qa.testcases.Login</td><td><a href="#m0">verifyLoginWithValidCredentials</a></td><td rowspan="2">1714885301298</td><td rowspan="2">23</td></tr><tr class="failedeven"><td><a href="#m1">verifyLoginWithValidCredentials</a></td></tr><tr class="failedodd"><td rowspan="1">com.tutorialsninja.qa.testcases.Search</td><td><a href="#m2">verifySearchWithInvalidProduct</a></td><td rowspan="1">1714885325962</td><td rowspan="1">10465</td></tr><tr><th colspan="4">TutorialsNinja Test Cases &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.tutorialsninja.qa.testcases.Search</td><td><a href="#m3">verifySearchWithoutProvidingAnyProduct</a></td><td rowspan="1">1714885336570</td><td rowspan="1">0</td></tr><tr><th colspan="4">TutorialsNinja Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.tutorialsninja.qa.testcases.Login</td><td><a href="#m4">verifyLoginWithInvalidCredentials</a></td><td rowspan="1">1714885304906</td><td rowspan="1">790</td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginWithInvalidEmailAndValidPassword</a></td><td rowspan="1">1714885309513</td><td rowspan="1">711</td></tr><tr class="passedeven"><td><a href="#m6">verifyLoginWithValidEmailAndInvalidPassword</a></td><td rowspan="1">1714885313801</td><td rowspan="1">770</td></tr><tr class="passedeven"><td><a href="#m7">verifyLoginWithoutProvidingCredentials</a></td><td rowspan="1">1714885318159</td><td rowspan="1">731</td></tr><tr class="passedodd"><td rowspan="2">com.tutorialsninja.qa.testcases.Register</td><td><a href="#m8">verifyRegisterWithMandatoryFields</a></td><td rowspan="1">1714885285313</td><td rowspan="1">926</td></tr><tr class="passedodd"><td><a href="#m9">verifyRegisterWithoutMandatoryFields</a></td><td rowspan="1">1714885289807</td><td rowspan="1">4565</td></tr><tr class="passedeven"><td rowspan="1">com.tutorialsninja.qa.testcases.Search</td><td><a href="#m10">verifySearchWithValidProduct</a></td><td rowspan="1">1714885322122</td><td rowspan="1">588</td></tr></tbody>
+</table>
+<h2>TutorialsNinja Test Cases</h2><h3 id="m0">com.tutorialsninja.qa.testcases.Login#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>pacc12345@gmail.com</td><td>116629</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at com.tutorialsninja.qa.pages.LoginPage.enterEmail(LoginPage.java:33)
+	at com.tutorialsninja.qa.testcases.Login.verifyLoginWithValidCredentials(Login.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tutorialsninja.qa.testcases.Login#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>qaraj@gmail.com</td><td>116629</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at com.tutorialsninja.qa.pages.LoginPage.enterEmail(LoginPage.java:33)
+	at com.tutorialsninja.qa.testcases.Login.verifyLoginWithValidCredentials(Login.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tutorialsninja.qa.testcases.Search#verifySearchWithInvalidProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;p[contains(text(),&apos;There is no product that matches the search criteria.&apos;)]&quot;}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39eccdb876f06d18b8a166661e28e946, findElement {value=p[contains(text(),&apos;There is no product that matches the search criteria.&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\ArtiR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64527/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39eccdb876f06d18b8a166661e28e946
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.tutorialsninja.qa.testcases.Search.verifySearchWithInvalidProduct(Search.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tutorialsninja.qa.testcases.Search#verifySearchWithoutProvidingAnyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.tutorialsninja.qa.testcases.Search.verifySearchWithoutProvidingAnyProduct() on instance com.tutorialsninja.qa.testcases.Search@367ffa75 depends on not successfully finished methods 
+[com.tutorialsninja.qa.testcases.Search.verifySearchWithInvalidProduct() on instance com.tutorialsninja.qa.testcases.Search@367ffa75]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tutorialsninja.qa.testcases.Login#verifyLoginWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.tutorialsninja.qa.testcases.Login#verifyLoginWithInvalidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.tutorialsninja.qa.testcases.Login#verifyLoginWithValidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.tutorialsninja.qa.testcases.Login#verifyLoginWithoutProvidingCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.tutorialsninja.qa.testcases.Register#verifyRegisterWithMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.tutorialsninja.qa.testcases.Register#verifyRegisterWithoutMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.tutorialsninja.qa.testcases.Search#verifySearchWithValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
